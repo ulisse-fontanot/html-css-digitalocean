@@ -1,0 +1,99 @@
+/* debug */
+.debug [class*='col-']{
+  background-color: blue;
+  height: 100px;
+  border: 2px solid red;
+}
+.debug [class*='col-'] .row [class*='col-']{
+  background-color: green;
+  height: 100px;
+  border: 2px solid white;
+}
+.debug .h_600{
+  height: 600px;
+}
+.debug .h_500{
+  height: 500px;
+}
+.debug .h_400{
+  height: 400px;
+}
+.debug .h_300{
+  height: 300px;
+}
+.debug .h_200{
+  height: 200px;
+}
+.container_h{
+  height: 100%;
+  background-color: lightgreen;
+}
+.debug section{
+  padding: 50px 0;
+}
+/* classi riutilizzabili */
+
+/* inizio header */
+/* inizio navbar */
+header nav{
+  background-color: white;
+}
+/* fine navbar */
+
+/* inizio jumbotron */
+header .jumbotron{
+  background-color: #015AFF;
+}
+/* fine jumbotron */
+/* fine header */
+
+
+/* inizio main */
+/* inizio section_1 */
+main #section_1{
+  background-color: grey;
+}
+/* fine section_1 */
+
+/* inizio section_2 */
+main #section_2{
+  background-color: white;
+}
+/* fine section_2 */
+
+/* inizio section_3 */
+main #section_3{
+  background-color: grey;
+}
+/* fine section_3 */
+
+/* inizio section_4 */
+main #section_4{
+  background-color: white;
+}
+/* fine section_4 */
+
+/* inizio section_5 */
+main #section_5{
+  background-color: #031B4E;
+}
+/* fine section_5 */
+
+/* inizio section_6 */
+main #section_6{
+  background-color: grey;
+}
+/* fine section_6 */
+
+/* inizio section_7 */
+main #section_7{
+  background-color: #015AFF;
+}
+/* fine section_7 */
+/* fine main */
+
+/* inizio footer */
+footer{
+  background-color: #031B4E;
+}
+/* fine footer */
