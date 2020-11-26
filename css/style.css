@@ -29,12 +29,9 @@
 .debug .h_200{
   height: 200px;
 }
-.container_h{
+.debug .container_h{
   height: 100%;
   background-color: lightgreen;
-}
-.debug section, .debug footer{
-  padding: 50px 0;
 }
 /* classi riutilizzabili */
 .bgcol_white{
@@ -69,12 +66,24 @@
   color: #031B4E;
 }
 
+.text_bold{
+  font-weight: bold;
+}
+
 .br_radius{
   border-radius: 5px;
 }
 
 .margin_bottom_10{
   margin-bottom: 10px;
+}
+
+.h_100{
+  height: 100px;
+}
+
+section, footer{
+  padding: 50px 0;
 }
 /* inizio header */
 /* inizio navbar */
@@ -146,24 +155,68 @@ nav button{
 
 /* inizio main */
 /* inizio section_1 */
-/* WARNING: da togliere...solo x vedere meglio il debug */
-.debug main #section_1 [class*='col-'] .row [class*='col-']{
-  background-color: green;
-  height: 33px;
-  border: 2px solid white;
+section#section_1 [class*='col-'] .row [class*='col-']{
+  height: 100px;
+  position: relative;
+}
+
+section#section_1 [class*='col-'] .row [class*='col-'] img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+/* WARNING: non funziona */
+section#section_1 [class*='col-'] .row [class*='col-'] a{
+  font-size: 50px;
 }
 /* fine section_1 */
 
 /* inizio section_2 */
-/* WARNING: da togliere...solo x vedere meglio il debug */
-.debug main #section_2 [class*='col-'] .row [class*='col-']{
-  background-color: green;
-  height: 25px;
-  border: 2px solid white;
+section#section_2 [class*='col-'] ul li{
+  text-decoration: none;
+  border-left: 2px solid grey;
+  padding: 10px;
+  list-style-type: none;
+  color: grey;
+}
+
+section#section_2 [class*='col-'] .row [class*='col-'] img{
+  height: 30px;
+  width: 30px;
+}
+
+section#section_2 p{
+  color: grey;
 }
 /* fine section_2 */
 
 /* inizio section_3 */
+section#section_3 [class*='col-'] .row [class*='col-'] img{
+  width: 100%;
+}
+
+section#section_3 .freccie{
+  position: relative;
+}
+
+section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-left{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-right{
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
 /* fine section_3 */
 
 /* inizio section_4 */
