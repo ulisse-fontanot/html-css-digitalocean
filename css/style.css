@@ -39,7 +39,7 @@
 }
 
 .bgcol_grey{
-  background-color: rgb(203, 203, 203);
+  background-color: rgb(211, 220, 247);
 }
 
 .bgcol_lightblue{
@@ -78,6 +78,10 @@
   margin-bottom: 10px;
 }
 
+.margin_bottom_30{
+  margin-bottom: 30px;
+}
+
 .h_100{
   height: 100px;
 }
@@ -107,7 +111,7 @@ nav [class*='col-'] li{
   display: inline-block;
 }
 
-nav [class*='col-'] li button{
+nav [class*='col-'] li a.btn{
   color: #015AFF;
   border: 2px solid #015AFF;
 }
@@ -156,21 +160,17 @@ nav button{
 /* inizio main */
 /* inizio section_1 */
 section#section_1 [class*='col-'] .row [class*='col-']{
-  height: 100px;
-  position: relative;
+  max-height: 100px;
 }
 
 section#section_1 [class*='col-'] .row [class*='col-'] img{
   width: 100%;
-  position: absolute;
-  top: 50%;
   transform: translateY(-50%);
-  padding: 0 10px;
+  margin: 20px 0;
 }
 
-/* WARNING: non funziona */
-section#section_1 [class*='col-'] .row [class*='col-'] a{
-  font-size: 50px;
+section#section_1 [class*='col-'] a{
+  font-size: 20px;
 }
 /* fine section_1 */
 
@@ -194,17 +194,30 @@ section#section_2 p{
 /* fine section_2 */
 
 /* inizio section_3 */
+section#section_3 .schermate .row{
+  height: 100%;
+}
+
+section#section_3 [class*='col-'] .row .screenshot{
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 section#section_3 [class*='col-'] .row [class*='col-'] img{
   width: 100%;
 }
 
 section#section_3 .freccie{
   position: relative;
+  height: 100%;
 }
 
 section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-left{
   position: absolute;
-  left: 30%;
+  left: 15%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
@@ -212,10 +225,42 @@ section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-left{
 
 section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-right{
   position: absolute;
-  right: 30%;
+  right: 10%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
+}
+
+@media screen and (max-width: 767px){
+  section#section_3 .schermate{
+    height: 200px;
+  }
+
+  section#section_3 [class*='col-'] .row [class*='col-'] img{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  section#section_3 .schermate{
+    height: 275px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  section#section_3 .schermate{
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  section#section_3 .schermate{
+    height: 400px;
+  }
+
+  section#section_3 [class*='col-'] .row [class*='col-'] img{
+    width: 90%;
+  }
 }
 /* fine section_3 */
 
@@ -223,12 +268,86 @@ section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-right{
 /* fine section_4 */
 
 /* inizio section_5 */
+section#section_5{
+  background-image: linear-gradient(rgb(28, 47, 245), rgb(13, 10, 166));
+}
 /* fine section_5 */
 
 /* inizio section_6 */
+section#section_6 .schermate .row{
+  height: 100%;
+}
+
+section#section_6 [class*='col-'] .row .screenshot{
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#section_6 [class*='col-'] .row [class*='col-'] img{
+  width: 100%;
+}
+
+section#section_6 .freccie{
+  position: relative;
+  height: 100%;
+}
+
+section#section_6 [class*='col-'] .row [class*='col-'] i.fa-chevron-left{
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+section#section_6 [class*='col-'] .row [class*='col-'] i.fa-chevron-right{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+@media screen and (max-width: 767px){
+  section#section_6 .schermate{
+    height: 200px;
+  }
+
+  section#section_6 [class*='col-'] .row [class*='col-'] img{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  section#section_6 .schermate{
+    height: 275px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  section#section_6 .schermate{
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  section#section_6 .schermate{
+    height: 400px;
+  }
+
+  section#section_6 [class*='col-'] .row [class*='col-'] img{
+    width: 90%;
+  }
+}
 /* fine section_6 */
 
 /* inizio section_7 */
+section#section_7{
+  background-image: linear-gradient(rgb(28, 47, 245), rgb(13, 10, 166));
+}
 /* fine section_7 */
 /* fine main */
 
