@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /* debug */
 .debug [class*='col-']{
   background-color: blue;
@@ -32,6 +37,10 @@
   padding: 50px 0;
 }
 /* classi riutilizzabili */
+.bgcol_white{
+  background-color: white;
+}
+
 .bgcol_grey{
   background-color: rgb(203, 203, 203);
 }
@@ -43,41 +52,92 @@
 .bgcol_darkblue{
   background-color: #031B4E;
 }
+
+.text_white{
+  color: white;
+}
+
+.text_grey{
+  color: grey;
+}
+
+.text_lightblue{
+  color: #015AFF;
+}
+
+.text_darkblue{
+  color: #031B4E;
+}
+
+.br_radius{
+  border-radius: 5px;
+}
 /* inizio header */
 /* inizio navbar */
 nav{
   height: 100px;
 }
 
-nav div img{
-  width: 100%;
-  padding: 35px 0;
+nav [class*='col-'] img{
+  height: 30px;
+  margin-top: 35px;
 }
 
-nav [class*='col-'] .row [class*='col-']{
+nav [class*='col-'] li{
   color: #031B4E;
   height: 100px;
   line-height: 100px;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-}
-
-nav [class*='col-'] .row [class*='col-'] p, nav [class*='col-'] .row [class*='col-'] i{
+  padding-right: 10px;
   display: inline-block;
 }
 
-nav button .btn{
-  float: right;
-  margin: 35px 0;
+nav [class*='col-'] li button{
   color: #015AFF;
   border: 2px solid #015AFF;
 }
 
-
+nav button{
+  float: right;
+  margin: 35px 0;
+}
 /* fine navbar */
 
 /* inizio jumbotron */
+.jumbotron{
+  padding: 10px;
+  background-image: url('..img/bg-home-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron h1{
+  color: white;
+  font-weight: bold;
+}
+
+.jumbo_dx{
+  text-align: center;
+}
+
+.jumbo_dx h2{
+  font-weight: bold;
+}
+
+.jumbo_dx div{
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.jumbo_dx div button{
+  width: 100%;
+}
+
+.jumbo_dx div button img{
+  height: 20px;
+}
 
 /* fine jumbotron */
 /* fine header */
