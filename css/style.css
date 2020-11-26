@@ -72,6 +72,10 @@
 .br_radius{
   border-radius: 5px;
 }
+
+.margin_bottom_10{
+  margin-bottom: 10px;
+}
 /* inizio header */
 /* inizio navbar */
 nav{
@@ -108,7 +112,7 @@ nav button{
 /* inizio jumbotron */
 .jumbotron{
   padding: 10px;
-  background-image: url('..img/bg-home-1.jpg');
+  background-image: url('../img/bg-home-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -118,27 +122,24 @@ nav button{
   font-weight: bold;
 }
 
-.jumbo_dx{
-  text-align: center;
-}
-
 .jumbo_dx h2{
   font-weight: bold;
 }
 
-.jumbo_dx div{
+.jumbo_dx div, .jumbo_dx div input, .jumbo_dx div a{
   width: 100%;
-  padding-bottom: 10px;
+  font-weight: bold;
 }
 
-.jumbo_dx div button{
-  width: 100%;
-}
-
-.jumbo_dx div button img{
-  height: 20px;
-}
-
+ .jumbo_dx .google_signup::before{
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-image: url('../img/gmail.jpg');
+  background-size: cover;
+ }
 /* fine jumbotron */
 /* fine header */
 
