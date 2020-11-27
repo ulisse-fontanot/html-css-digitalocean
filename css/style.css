@@ -59,7 +59,7 @@
 }
 
 .text_lightblue{
-  color: #015AFF;
+  color: #00d7d2;
 }
 
 .text_darkblue{
@@ -271,6 +271,24 @@ section#section_3 [class*='col-'] .row [class*='col-'] i.fa-chevron-right{
 section#section_5{
   background-image: linear-gradient(rgb(28, 47, 245), rgb(13, 10, 166));
 }
+
+.sez_5_griglia{
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 2px solid grey;
+}
+
+.sez_5_griglia *{
+  display: inline-block;
+}
+
+.sez_5_griglia p{
+  padding-left: 40px;
+}
+
+.sez_5_griglia a{
+  float: right;
+}
 /* fine section_5 */
 
 /* inizio section_6 */
@@ -352,4 +370,19 @@ section#section_7{
 /* fine main */
 
 /* inizio footer */
+footer .row div:first-of-type img, footer .row div:first-of-type strong, footer .row div:first-of-type p,footer .row div:first-of-type div{
+  display: block;
+}
+
+footer .row [class*='col-'] .social i{
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+footer .row [class*='col-'] a{
+  display: block;
+  color: grey;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 /* fine footer */
